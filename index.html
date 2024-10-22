@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de inputs</h1>
+    <form action="procesa.php">
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" maxlength="6" name="nombre" required placeholder="Escriba su población" id="nombre">
+        </p>
+        <p>
+            <label for="poblacion">Población:</label>
+            <input type="text" value="Alcázar de San Juan" maxlength="50" name="poblacion" id="poblacion" autofocus>
+        </p>
+        <p>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" maxlength="6" minlength="4" name="contraseña" id="contraseña">
+        </p>
+        <p>
+            <label for="hombre">Hombre:</label>
+            <input type="radio" value="H" id="hombre" name="genero" checked>
+            <label for="mujer">Mujer:</label>
+            <input type="radio" value="M" id="mujer" name="genero">
+        </p>
+        <p>
+            <label for="fumador">Fumador:</label>
+            <input type="checkbox" name="fumador" id="fumador" checked>
+        </p>
+    </fieldset>
+
+    <p>
+        <label for="provincia">Provincia:</label>
+        <select name="provincia" id="provincia">
+            <option value="Ciudad Real">Ciudad Real</option>
+            <option value="Albacete">Albacete</option>
+            <option value="Guadalajara">Guadalajara</option>
+            <option value="Cuenca">Cuenca</option>
+            <option value="Toledo" selected>Toledo</option>
+        </select>
+        <p>
+            <label for="observaciones">Observaciones:</label>
+            <textarea name="observaciones" id="observaciones" cols="10" rows="6" placeholder="Escriba algo"></textarea>
+        </p>
+        <p>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+        </p>
+        <p>
+            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">
+        </p>
+        <p>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="0" max="100">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label for="foto">Adjuntar foto:</label>
+            <input type="file" name="foto" id="foto">
+        </p>
+    </p>
+    <!--Botones de envío y reset-->
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reiniciar formulario">
+    </p>
+    </form>
+</body>
+</html>
